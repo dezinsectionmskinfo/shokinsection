@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ShokInsection — дезинсекция и дератизация в Москве | 8 999 888-96-76</title>
-<meta name="description" content="Профессиональная дезинсекция и дератизация в Москве. 7 лет на рынке, лицензия, гарантия. Квартиры, дома, офисы, общепит.">
+<meta name="description" content="Профессиональная дезинсекция и дератизация в Москве. 7 лет на рынке, лицензия. Квартиры, дома, офисы, общепит.">
 <style>
 :root{
   --orange:#F97316; --orange-dark:#EA580C; --orange-light:#FFF1E6;
@@ -32,8 +32,6 @@ nav a:hover{color:var(--orange)}
 .btn:hover{background:var(--orange-dark);transform:translateY(-1px)}
 .btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.55)}
 .btn-outline:hover{background:rgba(255,255,255,.1);border-color:#fff}
-.btn-ghost{background:var(--gray-light);color:var(--navy)}
-.btn-ghost:hover{background:#E2E8F0}
 .burger{display:none;font-size:26px;background:none;border:none;cursor:pointer;color:var(--navy)}
 .hero{background:radial-gradient(1100px 500px at 85% -10%,rgba(249,115,22,.35),transparent 60%),linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;padding:90px 0}
 .hero .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(249,115,22,.15);border:1px solid rgba(249,115,22,.5);color:#FFB27A;padding:8px 16px;border-radius:100px;font-size:13px;font-weight:600;margin-bottom:22px}
@@ -61,16 +59,12 @@ nav a:hover{color:var(--orange)}
 .benefit b{display:block;font-size:16px;margin-bottom:2px}
 .benefit small{color:var(--gray);font-size:14px}
 .form-wrap{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
-.form-panel{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
-.form-panel h3{font-size:22px;margin-bottom:6px}
-.form-panel .form-hint{color:var(--gray);font-size:14.5px;margin-bottom:22px}
-.field{margin-bottom:16px}
-.field label{display:block;font-size:13.5px;font-weight:700;margin-bottom:6px}
-.field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:15px;font-family:inherit;outline:none;transition:.15s;background:#fff;color:var(--navy)}
-.field textarea{resize:vertical;min-height:80px}
-.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(249,115,22,.12)}
-.form-panel .btn{width:100%;margin-top:6px}
-.form-note{font-size:12.5px;color:var(--gray);margin-top:14px;text-align:center;line-height:1.5}
+.form-panel{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:36px;box-shadow:var(--shadow);text-align:center}
+.form-panel h3{font-size:24px;margin-bottom:16px}
+.phone-big-link{display:block;font-size:32px;font-weight:800;color:var(--orange);margin-bottom:10px;letter-spacing:-.5px}
+.phone-big-link:hover{color:var(--orange-dark)}
+.form-panel .hours{color:var(--gray);font-size:15px;margin-bottom:24px}
+.form-panel .btn{width:100%}
 .form-info h3{font-size:22px;margin-bottom:14px}
 .form-info ul{list-style:none;display:grid;gap:14px;margin-bottom:26px}
 .form-info li{display:flex;gap:12px;align-items:flex-start;color:var(--gray);font-size:15px}
@@ -95,9 +89,6 @@ nav a:hover{color:var(--orange)}
 .contact-item a,.contact-item p{font-size:18px;font-weight:700;color:#fff}
 .contact-item a:hover{color:var(--orange)}
 footer{padding:24px 0;text-align:center;color:var(--gray);font-size:14px;border-top:1px solid var(--border)}
-.toast{position:fixed;left:50%;bottom:30px;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#fff;padding:14px 22px;border-radius:12px;font-weight:600;font-size:14.5px;box-shadow:0 20px 40px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:.3s;z-index:300;display:flex;align-items:center;gap:10px;max-width:92%;text-align:left}
-.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-.toast .tick{color:#4ADE80;font-weight:900}
 @media(max-width:900px){
   .about-grid,.form-wrap{grid-template-columns:1fr;gap:32px}
   .hero h1{font-size:36px}
@@ -112,6 +103,7 @@ footer{padding:24px 0;text-align:center;color:var(--gray);font-size:14px;border-
 }
 @media(max-width:520px){
   .hero h1{font-size:30px}
+  .phone-big-link{font-size:26px}
 }
 </style>
 </head>
@@ -122,7 +114,7 @@ footer{padding:24px 0;text-align:center;color:var(--gray);font-size:14px;border-
     <nav id="nav">
       <a href="#services">Услуги</a>
       <a href="#about">О нас</a>
-      <a href="#request">Заявка</a>
+      <a href="#request">Связаться</a>
       <a href="#reviews">Отзывы</a>
       <a href="#contacts">Контакты</a>
     </nav>
@@ -133,17 +125,16 @@ footer{padding:24px 0;text-align:center;color:var(--gray);font-size:14px;border-
 
 <section class="hero">
   <div class="container">
-    <div class="badge">🛡️ 7 лет на рынке · Лицензия · Гарантия</div>
+    <div class="badge">🛡️ 7 лет на рынке · Лицензия</div>
     <h1>Дезинсекция и дератизация в Москве <span>— без насекомых и грызунов</span></h1>
-    <p>Уничтожаем клопов, тараканов, блох, муравьёв, крыс и мышей в квартирах, домах, офисах и на предприятиях общепита. Сертифицированные препараты, профессиональное оборудование и гарантия результата.</p>
+    <p>Уничтожаем клопов, тараканов, блох, муравьёв, крыс и мышей в квартирах, домах, офисах и на предприятиях общепита. Сертифицированные препараты и профессиональное оборудование.</p>
     <div class="hero-actions">
-      <a href="#request" class="btn">Оставить заявку</a>
-      <a href="tel:+79998889676" class="btn btn-outline">📞 8 999 888-96-76</a>
+      <a href="tel:+79998889676" class="btn">📞 Позвонить</a>
+      <a href="#services" class="btn btn-outline">Наши услуги</a>
     </div>
     <div class="hero-features">
       <div class="hf"><b>7 лет</b><small>на рынке дезинсекции</small></div>
       <div class="hf"><b>Лицензия</b><small>и сертификаты СЭС</small></div>
-      <div class="hf"><b>100%</b><small>гарантия результата</small></div>
       <div class="hf"><b>Вся Москва</b><small>выезд в день обращения</small></div>
     </div>
   </div>
@@ -155,10 +146,10 @@ footer{padding:24px 0;text-align:center;color:var(--gray);font-size:14px;border-
     <p class="sub">Полный спектр дезинсекции и дератизации. Не нашли нужную услугу — позвоните, подберём решение под вашу задачу.</p>
     <div class="grid">
       <div class="card"><div class="icon">🐛</div><h3>Уничтожение клопов</h3><p>Холодный и горячий туман, обработка постелей, мебели и щелей. Избавим за 1–2 выезда.</p><div class="price">от 3 500 ₽ <small>за квартиру</small></div></div>
-      <div class="card"><div class="icon">🪳</div><h3>Уничтожение тараканов</h3><p>Барьерная защита и обработка мест обитания. Результат с гарантией до 12 месяцев.</p><div class="price">от 2 500 ₽ <small>за квартиру</small></div></div>
+      <div class="card"><div class="icon">🪳</div><h3>Уничтожение тараканов</h3><p>Барьерная защита и обработка мест обитания. Прорабатываем всю квартиру целиком.</p><div class="price">от 2 500 ₽ <small>за квартиру</small></div></div>
       <div class="card"><div class="icon">🐜</div><h3>Блохи и муравьи</h3><p>Обработка квартир, домов, подъездов и участков. Безопасно для людей и животных.</p><div class="price">от 2 200 ₽</div></div>
       <div class="card"><div class="icon">🐀</div><h3>Дератизация: крысы и мыши</h3><p>Комплексная программа с приманками и барьерами для квартир, домов, складов и общепита.</p><div class="price">от 3 000 ₽</div></div>
-      <div class="card"><div class="icon">🏠</div><h3>Квартира под ключ</h3><p>Полная обработка квартиры от всех видов вредителей с гарантийным контролем.</p><div class="price">от 2 500 ₽ <small>1–2 комнаты</small></div></div>
+      <div class="card"><div class="icon">🏠</div><h3>Квартира под ключ</h3><p>Полная обработка квартиры от всех видов вредителей с проверкой результата.</p><div class="price">от 2 500 ₽ <small>1–2 комнаты</small></div></div>
       <div class="card"><div class="icon">🏡</div><h3>Частный дом и коттедж</h3><p>Дезинсекция и дератизация дома, подвала, чердака и придомовой территории.</p><div class="price">от 4 500 ₽</div></div>
       <div class="card"><div class="icon">🏢</div><h3>Офисы и помещения</h3><p>Обработка офисов, кабинетов и коммерческих помещений без остановки работы.</p><div class="price">от 30 ₽ <small>за м²</small></div></div>
       <div class="card"><div class="icon">🍽️</div><h3>Общепит: кафе, рестораны</h3><p>Санитарная обработка кухонь, складов и залов. Соответствие требованиям СЭС.</p><div class="price">от 5 000 ₽</div></div>
@@ -180,12 +171,11 @@ footer{padding:24px 0;text-align:center;color:var(--gray);font-size:14px;border-
       <div class="about-text">
         <h2>О компании ShokInsection</h2>
         <p><b>ShokInsection</b> — команда профессионалов в сфере дезинсекции и дератизации. Уже <b>7 лет</b> мы защищаем квартиры, дома, офисы и предприятия общепита Москвы от насекомых и грызунов.</p>
-        <p>Работаем по <b>лицензии</b> с использованием сертифицированных препаратов и профессионального оборудования. Каждая обработка завершается гарантией и бесплатной контрольной проверкой при необходимости.</p>
+        <p>Работаем по <b>лицензии</b> с использованием сертифицированных препаратов и профессионального оборудования. Работаем аккуратно и по договору.</p>
         <p>Нам доверяют семьи с детьми и питомцами — мы используем средства, безопасные при соблюдении простых рекомендаций.</p>
       </div>
       <div class="benefits">
         <div class="benefit"><div class="benefit-icon">📜</div><div><b>Лицензия и сертификаты</b><small>Работаем официально, все препараты сертифицированы</small></div></div>
-        <div class="benefit"><div class="benefit-icon">🛡️</div><div><b>Гарантия по договору</b><small>Бесплатная повторная обработка при необходимости</small></div></div>
         <div class="benefit"><div class="benefit-icon">👨‍👩‍👧</div><div><b>Безопасно для детей и животных</b><small>Профессиональные средства с низкой токсичностью</small></div></div>
         <div class="benefit"><div class="benefit-icon">🚗</div><div><b>Выезд по всей Москве</b><small>В день обращения, без скрытых доплат за дорогу</small></div></div>
         <div class="benefit"><div class="benefit-icon">🔒</div><div><b>Конфиденциально</b><small>Не разглашаем данные клиентов</small></div></div>
@@ -196,54 +186,26 @@ footer{padding:24px 0;text-align:center;color:var(--gray);font-size:14px;border-
 
 <section id="request">
   <div class="container">
-    <h2>Оставить заявку</h2>
-    <p class="sub">Заполните форму — мы свяжемся с вами в течение 10 минут и подберём удобное время выезда.</p>
+    <h2>Связаться с нами</h2>
+    <p class="sub">Позвоните — ответим на вопросы, назовём точную цену и подберём удобное время выезда.</p>
     <div class="form-wrap">
       <div class="form-panel">
-        <h3>Заявка на выезд</h3>
-        <p class="form-hint">Отправка через WhatsApp — ничего платить не нужно.</p>
-        <form id="requestForm">
-          <div class="field"><label for="rName">Ваше имя</label><input type="text" id="rName" placeholder="Как к вам обращаться" required></div>
-          <div class="field"><label for="rPhone">Телефон</label><input type="tel" id="rPhone" placeholder="+7 (___) ___-__-__" required></div>
-          <div class="field"><label for="rService">Услуга</label>
-            <select id="rService" required>
-              <option value="">Выберите услугу</option>
-              <option>Уничтожение клопов</option>
-              <option>Уничтожение тараканов</option>
-              <option>Блохи и муравьи</option>
-              <option>Дератизация: крысы и мыши</option>
-              <option>Квартира под ключ</option>
-              <option>Частный дом и коттедж</option>
-              <option>Офисы и помещения</option>
-              <option>Общепит: кафе, рестораны</option>
-              <option>Магазины и склады</option>
-              <option>Гаражи и подвалы</option>
-              <option>Осы, шершни, пчёлы</option>
-              <option>Клещи на участке</option>
-              <option>Комары на участке</option>
-              <option>Дезинфекция</option>
-              <option>Фумигация</option>
-              <option>Моль и вредители запасов</option>
-              <option>Другое / не знаю</option>
-            </select>
-          </div>
-          <div class="field"><label for="rComment">Комментарий (необязательно)</label><textarea id="rComment" placeholder="Адрес, площадь, удобное время"></textarea></div>
-          <button type="submit" class="btn">Отправить в WhatsApp</button>
-          <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
-        </form>
+        <h3>Позвоните нам</h3>
+        <a href="tel:+79998889676" class="phone-big-link">8 999 888-96-76</a>
+        <p class="hours">Ежедневно с 8:00 до 22:00</p>
+        <a href="tel:+79998889676" class="btn">📞 Позвонить</a>
       </div>
       <div class="form-info">
-        <h3>Что будет дальше</h3>
+        <h3>Как мы работаем</h3>
         <ul>
-          <li>Мы получаем вашу заявку и перезваниваем в течение 10 минут</li>
-          <li>Уточняем адрес, площадь и характер проблемы</li>
-          <li>Называем точную цену и время выезда</li>
+          <li>Звоните — уточняем задачу и сразу называем стоимость</li>
+          <li>Согласовываем удобные дату и время выезда</li>
           <li>Специалист приезжает со всем оборудованием</li>
+          <li>Проверяем результат вместе с вами</li>
         </ul>
         <div class="contact-quick">
-          <h4>Не удобно писать — позвоните</h4>
-          <a href="tel:+79998889676">📞 8 999 888-96-76</a>
-          <small style="color:var(--gray);font-size:13.5px">Ежедневно с 8:00 до 22:00</small>
+          <h4>Работаем по всей Москве</h4>
+          <p style="color:var(--gray);font-size:14px">Выезд в день обращения. Все районы города.</p>
         </div>
       </div>
     </div>
@@ -260,7 +222,7 @@ footer{padding:24px 0;text-align:center;color:var(--gray);font-size:14px;border-
       <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">«Дератизация в кафе — вопрос спокойствия и проверок СЭС. Работают аккуратно, ночью, без остановки заведения. Заключили договор на обслуживание.»</p><div class="review-author"><div class="avatar">С</div><div><b>Сергей П.</b><small>5 апреля 2025</small></div></div></div>
       <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">«Обрабатывали частный дом от мышей и блох. Приехали с оборудованием, всё объяснили. Спустя месяц — ни одного следа. Рекомендую.»</p><div class="review-author"><div class="avatar">О</div><div><b>Ольга В.</b><small>19 апреля 2025</small></div></div></div>
       <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">«Заказывали обработку офиса от муравьёв. Сделали быстро и без запаха, сотрудники даже не заметили. Цена честная, без сюрпризов.»</p><div class="review-author"><div class="avatar">Д</div><div><b>Дмитрий Р.</b><small>3 мая 2025</small></div></div></div>
-      <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">«Обработали дачу от клещей перед сезоном. Быстро ответили на заявку, приехали точно в назначенное время. Всё чётко.»</p><div class="review-author"><div class="avatar">Е</div><div><b>Екатерина Л.</b><small>17 мая 2025</small></div></div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">«Обработали дачу от клещей перед сезоном. Быстро ответили на звонок, приехали точно в назначенное время. Всё чётко.»</p><div class="review-author"><div class="avatar">Е</div><div><b>Екатерина Л.</b><small>17 мая 2025</small></div></div></div>
     </div>
   </div>
 </section>
@@ -268,7 +230,7 @@ footer{padding:24px 0;text-align:center;color:var(--gray);font-size:14px;border-
 <section id="contacts" class="contacts">
   <div class="container">
     <h2>Контакты</h2>
-    <p class="sub">Позвоните или оставьте заявку — ответим быстро и подберём удобное время.</p>
+    <p class="sub">Позвоните — ответим быстро и подберём удобное время.</p>
     <div class="contact-grid">
       <div class="contact-item"><h4>Телефон</h4><a href="tel:+79998889676">8 999 888-96-76</a></div>
       <div class="contact-item"><h4>Город и зона выезда</h4><p>Москва и область</p></div>
@@ -283,32 +245,7 @@ footer{padding:24px 0;text-align:center;color:var(--gray);font-size:14px;border-
   <div class="container">© 2025 ShokInsection · Дезинсекция и дератизация в Москве · <a href="tel:+79998889676">8 999 888-96-76</a></div>
 </footer>
 
-<div class="toast" id="toast"><span class="tick">✓</span><span id="toastText">Готово</span></div>
-
 <script>
-const WA_NUMBER = '79998889676';
-const form = document.getElementById('requestForm');
-const toastEl = document.getElementById('toast');
-function showToast(text){
-  document.getElementById('toastText').textContent = text;
-  toastEl.classList.add('show');
-  setTimeout(()=>toastEl.classList.remove('show'), 4000);
-}
-form.addEventListener('submit', e => {
-  e.preventDefault();
-  const name = document.getElementById('rName').value.trim();
-  const phone = document.getElementById('rPhone').value.trim();
-  const service = document.getElementById('rService').value;
-  const comment = document.getElementById('rComment').value.trim();
-  if (!name){ showToast('Укажите имя'); return; }
-  if (phone.replace(/\D/g,'').length < 10){ showToast('Проверьте номер телефона'); return; }
-  if (!service){ showToast('Выберите услугу'); return; }
-  const text = 'Заявка с сайта ShokInsection\n' + 'Имя: ' + name + '\n' + 'Телефон: ' + phone + '\n' + 'Услуга: ' + service + (comment ? '\nКомментарий: ' + comment : '');
-  const url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text);
-  window.open(url, '_blank');
-  showToast('Заявка сформирована — отправьте её в WhatsApp');
-  form.reset();
-});
 const burger = document.getElementById('burger');
 const nav = document.getElementById('nav');
 burger.addEventListener('click', () => nav.classList.toggle('open'));
